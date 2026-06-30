@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="640" viewBox="0 0 800 640" role="img" aria-label="Decorative placeholder — reunited couple by the shore">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2EADC"/>
+      <stop offset="55%" stop-color="#E6CBA8"/>
+      <stop offset="100%" stop-color="#C98A6A"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B1E2B"/>
+      <stop offset="100%" stop-color="#5E1019"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="640" fill="url(#sky)"/>
+  <!-- soft sun glow -->
+  <circle cx="400" cy="230" r="150" fill="#FAF6EE" opacity="0.35"/>
+  <circle cx="400" cy="230" r="90" fill="#FAF6EE" opacity="0.45"/>
+  <!-- horizon -->
+  <rect y="430" width="800" height="210" fill="#B57B5C" opacity="0.45"/>
+  <!-- two silhouettes embracing -->
+  <g fill="url(#warm)">
+    <path d="M330 640 C330 520 350 470 400 470 C440 470 452 510 452 560 L452 640 Z"/>
+    <path d="M470 640 C470 520 450 470 400 470 C360 470 348 510 348 560 L348 640 Z" opacity="0.85"/>
+    <circle cx="372" cy="452" r="34"/>
+    <circle cx="430" cy="452" r="34" opacity="0.85"/>
+  </g>
+</svg>

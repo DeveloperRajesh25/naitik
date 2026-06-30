@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Portrait placeholder for Pandit Naitik Ji">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#F2EADC"/>
+      <stop offset="60%" stop-color="#EBD9C2"/>
+      <stop offset="100%" stop-color="#8B1E2B"/>
+    </radialGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A437"/>
+      <stop offset="100%" stop-color="#B5862A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <!-- subtle aura rings -->
+  <g fill="none" stroke="#D4A437" stroke-opacity="0.35">
+    <circle cx="300" cy="250" r="120"/>
+    <circle cx="300" cy="250" r="150" stroke-opacity="0.18"/>
+  </g>
+  <!-- shoulders / robe -->
+  <path d="M150 600 C150 470 220 410 300 410 C380 410 450 470 450 600 Z" fill="url(#robe)"/>
+  <path d="M300 410 L300 600" stroke="#8B1E2B" stroke-opacity="0.25" stroke-width="4"/>
+  <!-- head -->
+  <circle cx="300" cy="260" r="86" fill="#E8C9A0"/>
+  <!-- simple hair/turban hint -->
+  <path d="M214 250 C214 190 256 158 300 158 C344 158 386 190 386 250 C386 226 350 210 300 210 C250 210 214 226 214 250 Z" fill="#5E1019"/>
+  <!-- tilak -->
+  <path d="M300 196 L294 232 L306 232 Z" fill="#8B1E2B"/>
+  <text x="300" y="556" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#FAF6EE" opacity="0.9">Pandit Naitik Ji</text>
+</svg>
