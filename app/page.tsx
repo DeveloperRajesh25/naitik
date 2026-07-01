@@ -113,7 +113,7 @@ function Hero() {
             />
             <div className="relative overflow-hidden rounded-[1.75rem] border border-gold/30 bg-cream-dark shadow-card-hover">
               <Image
-                src="/pandit-naitik.svg"
+                src="/logo.jpeg"
                 alt={`${ASTROLOGER_NAME}, Love Problem & Vashikaran Specialist`}
                 width={600}
                 height={600}
@@ -167,7 +167,7 @@ function About() {
                 />
                 <div className="absolute inset-2 overflow-hidden rounded-full border-2 border-gold/60 shadow-card-hover">
                   <Image
-                    src="/pandit-naitik.svg"
+                    src="/logo.jpeg"
                     alt={`Portrait of ${ASTROLOGER_NAME}`}
                     width={400}
                     height={400}

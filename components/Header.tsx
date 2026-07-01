@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Menu, X } from "lucide-react";
 import { NAV_LINKS, PHONE_TEL, ASTROLOGER_NAME } from "@/lib/site";
 import CTAButton from "./CTAButton";
@@ -41,8 +42,14 @@ export default function Header() {
           className="group flex items-center gap-2.5"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold/50 bg-maroon/5 text-gold-700 transition-colors group-hover:bg-maroon/10">
-            <LotusMark className="h-5 w-5" />
+          <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-gold/50 bg-maroon/5 transition-colors group-hover:bg-maroon/10">
+            <Image
+              src="/logo.jpeg"
+              alt="Love Specialist Astrologer logo"
+              fill
+              sizes="36px"
+              className="object-cover"
+            />
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-serif text-lg font-semibold tracking-tight text-maroon-800 sm:text-xl">
@@ -125,35 +132,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-  );
-}
-
-/** Small lotus glyph used as the brand mark. */
-function LotusMark({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      className={className}
-      aria-hidden="true"
-    >
-      <path
-        d="M12 4c1.4 1.8 1.4 4.2 0 6-1.4-1.8-1.4-4.2 0-6Z"
-        fill="currentColor"
-        opacity="0.9"
-      />
-      <path
-        d="M12 11c-2.3-.4-4.4.5-5.6 2.5C8.7 14 11 13 12 11Zm0 0c2.3-.4 4.4.5 5.6 2.5C15.3 14 13 13 12 11Z"
-        fill="currentColor"
-        opacity="0.7"
-      />
-      <path
-        d="M4 13c.6 2.7 3.2 5 8 5s7.4-2.3 8-5c-2 1.4-4.8 2-8 2s-6-.6-8-2Z"
-        stroke="currentColor"
-        strokeWidth="1.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
   );
 }

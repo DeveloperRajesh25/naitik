@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageCircle, MapPin } from "lucide-react";
 import {
   NAV_LINKS,
@@ -22,9 +23,20 @@ export default function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr]">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-xl font-semibold text-cream">
-              {BUSINESS_NAME}
-            </h3>
+            <div className="flex items-center gap-3">
+              <span className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold/40">
+                <Image
+                  src="/logo.jpeg"
+                  alt={`${BUSINESS_NAME} logo`}
+                  fill
+                  sizes="40px"
+                  className="object-cover"
+                />
+              </span>
+              <h3 className="font-serif text-xl font-semibold text-cream">
+                {BUSINESS_NAME}
+              </h3>
+            </div>
             <p className="mt-1 text-sm font-medium text-gold-soft">
               {ASTROLOGER_NAME}
             </p>
@@ -99,6 +111,17 @@ export default function Footer() {
           </p>
           <p className="text-cream/45">
             For guidance &amp; consultation purposes. Results may vary.
+          </p>
+          <p className="text-cream/45">
+            Developed by{" "}
+            <Link
+              href="https://webcros.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-gold-soft transition-colors hover:text-gold"
+            >
+              webcros
+            </Link>
           </p>
         </div>
       </div>
